@@ -152,6 +152,13 @@ public:
     */
     void
     reset(File&& file, error_code& ec);
+
+    /// Returns a reference to the open file
+    File&
+    file()
+    {
+        return file_;
+    }
 };
 
 template<class File>
